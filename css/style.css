@@ -1,0 +1,21 @@
+@import url("./variables.css");
+
+/* libs */
+@import url("./libs/fonts.css");
+
+/* components */
+@import url("./components/container.css");
+
+/* sections */
+@import url("./sections/promo.css");
+
+/* ui */
+@import url("./ui/buttons.css");
+
+* {
+  font-family: var(--font-family);
+  color: var(--gray-700);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
