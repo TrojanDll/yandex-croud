@@ -45,3 +45,32 @@
   display: flex;
   justify-content: space-between;
 }
+
+.promo__ticker {
+  width: 100%;
+  background-color: var(--red);
+  height: 60px;
+  padding: 18px 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.promo__ticker svg {
+  margin: 0 10px;
+  margin-bottom: 6px;
+}
+
+/* .promo__ticker span {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  margin: 0 12px;
+  background-color: #ffffff;
+} */
