@@ -7,6 +7,35 @@
     <title>Yandex croud</title>
   </head>
   <body>
+    <svg style="display: none" display="none">
+      <symbol id="dot" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3Z"
+          fill="white"
+        />
+      </symbol>
+
+      <symbol id="arrow-left" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#inherit" />
+        <path
+          d="M24.5382 30.4615L16.0767 21.9999L24.5382 13.5384"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="square"
+        />
+      </symbol>
+
+      <symbol id="arrow-right" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="22" fill="#inherit" />
+        <path
+          d="M19.4618 13.5384L27.9233 21.9999L19.4618 30.4615"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="square"
+        />
+      </symbol>
+    </svg>
+
     <main class="main">
       <section class="promo">
         <div class="container">
@@ -32,26 +61,11 @@
 
       <marquee scrollamount="20" class="promo__ticker" behavior="scroll" direction="left">
         Дело помощи утопающим — дело рук самих утопающих!
-        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3Z"
-            fill="white"
-          />
-        </svg>
+        <svg class="promo__ticker-dot"><use href="#dot"></use></svg>
         Шахматы двигают вперед не только культуру, но и экономику!
-        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3Z"
-            fill="white"
-          />
-        </svg>
+        <svg class="promo__ticker-dot"><use href="#dot"></use></svg>
         Лед тронулся, господа присяжные заседатели!
-        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3Z"
-            fill="white"
-          />
-        </svg>
+        <svg class="promo__ticker-dot"><use href="#dot"></use></svg>
       </marquee>
 
       <section class="lecture">
@@ -187,7 +201,105 @@
           </ul>
         </div>
       </section>
+
+      <section class="participants">
+        <div class="container">
+          <div class="participants__title-wrapper">
+            <h2 class="participants__title">Участники турнира</h2>
+
+            <div class="participants__carousel-buttons">
+              <button
+                id="participants-button-prev"
+                class="participants__carousel-button participants__carousel-button_left"
+              >
+                <svg class="participants__carousel-button__img"><use href="#arrow-left"></use></svg>
+              </button>
+
+              <div class="participants__carousel-counter">
+                <span class="participants__carousel-currient">1</span>
+                <span class="participants__carousel-counter__divider"> / </span>
+                <span class="participants__carousel-total">6</span>
+              </div>
+
+              <button
+                id="participants-button-next"
+                class="participants__carousel-button participants__carousel-button_right"
+              >
+                <svg class="participants__carousel-button__img"><use href="#arrow-right"></use></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="participants__slider-container">
+            <div class="participants__slider-wrapper">
+              <div class="participants__slider">
+                <div class="participants__slide">
+                  <img src="./assets/img/participant.webp" alt="Участник" class="participants__slide__img" />
+                  <h3 class="participants__slide__title">Хозе-Рауль Капабланка</h3>
+                  <h4 class="participants__slide__subtitle">Чемпион мира по шахматам</h4>
+                  <a href="#" class="participants__slide__link">Подробнее</a>
+                </div>
+
+                <div class="participants__slide">
+                  <img src="./assets/img/participant.webp" alt="Участник" class="participants__slide__img" />
+                  <h3 class="participants__slide__title">Эммануил Ласкер</h3>
+                  <h4 class="participants__slide__subtitle">Чемпион мира по шахматам</h4>
+                  <a href="#" class="participants__slide__link">Подробнее</a>
+                </div>
+
+                <div class="participants__slide">
+                  <img src="./assets/img/participant.webp" alt="Участник" class="participants__slide__img" />
+                  <h3 class="participants__slide__title">Александр Алехин</h3>
+                  <h4 class="participants__slide__subtitle">Чемпион мира по шахматам</h4>
+                  <a href="#" class="participants__slide__link">Подробнее</a>
+                </div>
+
+                <div class="participants__slide">
+                  <img src="./assets/img/participant.webp" alt="Участник" class="participants__slide__img" />
+                  <h3 class="participants__slide__title">Арон Нимцович</h3>
+                  <h4 class="participants__slide__subtitle">Чемпион мира по шахматам</h4>
+                  <a href="#" class="participants__slide__link">Подробнее</a>
+                </div>
+
+                <div class="participants__slide">
+                  <img src="./assets/img/participant.webp" alt="Участник" class="participants__slide__img" />
+                  <h3 class="participants__slide__title">Рихард Рети</h3>
+                  <h4 class="participants__slide__subtitle">Чемпион мира по шахматам</h4>
+                  <a href="#" class="participants__slide__link">Подробнее</a>
+                </div>
+
+                <div class="participants__slide">
+                  <img src="./assets/img/participant.webp" alt="Участник" class="participants__slide__img" />
+                  <h3 class="participants__slide__title">Остап Бендер</h3>
+                  <h4 class="participants__slide__subtitle">Гроссмейстер</h4>
+                  <a href="#" class="participants__slide__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <marquee scrollamount="20" class="promo__ticker" behavior="scroll" direction="left">
+        Дело помощи утопающим — дело рук самих утопающих!
+        <svg class="promo__ticker-dot"><use href="#dot"></use></svg>
+        Шахматы двигают вперед не только культуру, но и экономику!
+        <svg class="promo__ticker-dot"><use href="#dot"></use></svg>
+        Лед тронулся, господа присяжные заседатели!
+        <svg class="promo__ticker-dot"><use href="#dot"></use></svg>
+      </marquee>
+
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__text">
+            Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями
+            можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/script.js"></script>
   </body>

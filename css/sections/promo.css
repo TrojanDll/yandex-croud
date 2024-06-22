@@ -62,7 +62,9 @@
   align-items: center;
 }
 
-.promo__ticker svg {
+.promo__ticker-dot {
+  width: 6px;
+  height: 6px;
   margin: 0 10px;
   margin-bottom: 6px;
 }

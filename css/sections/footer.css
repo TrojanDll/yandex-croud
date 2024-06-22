@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 140px;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 72px;
+  background-color: #e9ded4;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  opacity: 0.6;
+}
