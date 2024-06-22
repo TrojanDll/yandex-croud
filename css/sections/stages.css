@@ -1,0 +1,91 @@
+.stages {
+  padding-top: 200px;
+}
+
+.stages__title-wrapper {
+  position: relative;
+  max-width: 800px;
+}
+
+.stages__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.stages__subtitle {
+  position: absolute;
+  bottom: 8px;
+  right: 217px;
+  max-width: 280px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--blue);
+}
+
+.stages__items {
+  margin-top: 54px;
+  display: grid;
+  grid-template-areas: "railway hotel agriculture" "castle garage agriculture" "radio airport airport";
+  gap: 20px;
+  counter-reset: stages;
+}
+
+.stages__item {
+  padding: 20px;
+  display: flex;
+  column-gap: 16px;
+  background: url("./../../assets/img/cooper-bg.webp") center center/cover no-repeat;
+}
+
+.stages__circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  flex-shrink: 0;
+}
+
+.stages__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.stages__item:nth-child(1) {
+  grid-area: railway;
+}
+
+.stages__item:nth-child(2) {
+  grid-area: hotel;
+}
+
+.stages__item:nth-child(3) {
+  grid-area: agriculture;
+}
+
+.stages__item:nth-child(4) {
+  grid-area: castle;
+}
+
+.stages__item:nth-child(5) {
+  grid-area: garage;
+}
+
+.stages__item:nth-child(6) {
+  grid-area: radio;
+}
+
+.stages__item:nth-child(7) {
+  grid-area: airport;
+}

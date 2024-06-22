@@ -10,6 +10,7 @@
 /* sections */
 @import url("./sections/promo.css");
 @import url("./sections/lecture.css");
+@import url("./sections/stages.css");
 
 /* ui */
 @import url("./ui/buttons.css");
