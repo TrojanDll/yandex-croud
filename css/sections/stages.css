@@ -1,5 +1,15 @@
 .stages {
   padding-top: 200px;
+  position: relative;
+}
+
+.stages__side-img {
+  width: 401px;
+  height: 235px;
+  position: absolute;
+  bottom: 0;
+  right: 257px;
+  z-index: 5;
 }
 
 .stages__title-wrapper {
@@ -60,6 +70,10 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
+}
+
+.stages__text_tight {
+  max-width: 446px;
 }
 
 .stages__item:nth-child(1) {
