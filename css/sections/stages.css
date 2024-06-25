@@ -1,6 +1,10 @@
 .stages {
   padding-top: 200px;
-  position: relative;
+  overflow: hidden;
+}
+
+.stages__container {
+  overflow: visible;
 }
 
 .stages__side-img {
@@ -8,7 +12,8 @@
   height: 235px;
   position: absolute;
   bottom: 0;
-  right: 257px;
+  right: 0;
+  transform: translateX(94px);
   z-index: 5;
 }
 

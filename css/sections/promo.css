@@ -11,10 +11,11 @@
 
 .promo__content {
   max-width: 542px;
+  margin-top: 62px;
 }
 
-.promo__title {
-  margin-top: 62px;
+.promo__title,
+.promo__title span {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 60px;
@@ -69,10 +70,138 @@
   margin-bottom: 6px;
 }
 
-/* .promo__ticker span {
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  margin: 0 12px;
-  background-color: #ffffff;
-} */
+@media (max-width: 1270px) {
+  .promo__title,
+  .promo__title span {
+    font-size: 54px;
+  }
+
+  .promo__buttons {
+    max-width: 480px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .promo__button {
+    width: 228px;
+    height: 64px;
+    padding: 0 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo {
+    height: 570px;
+    background-position: -130px 0;
+  }
+
+  .promo__logo {
+    width: 205px;
+    height: auto;
+  }
+
+  .promo__content {
+    margin-top: 40px;
+  }
+
+  .promo__title,
+  .promo__title span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    background-position: -187px 0;
+  }
+
+  .promo__ticker {
+    height: 46px;
+    font-size: 18px;
+  }
+
+  .promo__title,
+  .promo__title span {
+    font-size: 42px;
+  }
+
+  .promo__content {
+    max-width: 495px;
+  }
+
+  .promo__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo {
+    background: url("./../../assets/img/main-bg-mobile.webp") center center/cover no-repeat;
+    background-position: 0 -320px;
+    height: 700px;
+  }
+
+  .promo__title {
+    max-width: 373px;
+  }
+
+  .promo__title,
+  .promo__title span {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 520px) {
+  .promo {
+    background-position: 0 -100px;
+    height: 774px;
+  }
+
+  .promo__buttons {
+    margin-top: 28px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .promo__button {
+    padding: 18px 20px;
+    width: 335px;
+    height: 47px;
+    width: 100%;
+  }
+
+  .promo__button_outlined {
+    background-color: #ffffff;
+    border: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .promo {
+    background-position: 0 0;
+  }
+
+  .promo__logo {
+    width: 213px;
+    height: 32px;
+  }
+
+  .promo__title,
+  .promo__title span {
+    font-size: 36px;
+  }
+
+  .promo__title span:first-child {
+    margin-left: 63px;
+  }
+
+  .promo__subtitle {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .promo__ticker {
+    height: 38px;
+    font-size: 16px;
+  }
+}
